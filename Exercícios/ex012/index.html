@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo será hospedado no meu próprio servidor.</p>
+
+    <video width="500" height="300" controls> <!--Outro parâmetro: POSTER, serve para colocar thumbnail no vídeo. -->
+
+    <source src="midia/meu-video-720.mkv" type="video/mp4">
+    <!-- 1º O navegador irá tentar por ordem, se um tipo de arquivo não for compativel, ele passará para o outro...-->
+    <source src="midia/meu-video-720.mp4" type="video/mp4">
+    <!--2º-->
+    <source src="midia/meu-video-720.webm" type="video/webm">
+    <!--3º-->
+    <source src="midia/meu-video-720.ogv" type="video/ogv">
+    <!--4º-->
+    
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p> 
+    <!--Para quando o navegador não for compativel com nenhum tipo de arquivo de vídeo: mp4, webm, mkv/m4v, ogv.-->
+    </video>
+
+    <!--Arquivos como esse utilizados anteriormente consomem muito TRÁFEGO DE DADOS, por conta de seus TAMANHOS.-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/-0O1z5KSYCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Copiando o código de incorporação de qualquer vídeo no YouTube.-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/374410050?h=e8abc315a0&color=5cd7d4&byline=0&portrait=0" width="500" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

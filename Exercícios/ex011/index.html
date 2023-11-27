@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem flexível">
+    </picture>
+    <!--Foi utilizado o aplicativo "GIMP" para produzir 3 diferentes fotos com tamanhos distintos. A foto "P" com 300px; A foto "M" com 700px e a foto "G" com 1000px.-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir ádios em HTML5.</p>
+    <audio src="midia/Someday - Coyote Hearing.mp3" controls></audio> 
+    <!--Outros tipos de arquivos de áudio: MP3, WAV, OGG.-->
+    <!--Alguns parâmetros usados para áudio: controls, autoplay, type, preload, loop.-->
+
+</body>
+</html>
+
